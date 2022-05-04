@@ -7,7 +7,7 @@ import os
 
 setuptools.setup(
     name='projnames',
-    version='0.0.1',
+    version='0.0.2',
     description='Projection name to/from epsg-code',
     long_description='Projection name to/from epsg-code using data from pyproj',
     long_description_content_type="text/markdown",
@@ -16,7 +16,7 @@ setuptools.setup(
     url='https://github.com/EMeraldGeo/projnames',
     packages=setuptools.find_packages(),
     include_package_data=True,
-    package_data={'emeraldinterpret': ['*.json', "*.txt", "*/*.css", "*/*.yaml", "*/*.pvsm"]},
+    package_data={'projnames': ['*.json', "*.txt", "*/*.css", "*/*.yaml", "*/*.pvsm"]},
     entry_points={
         'console_scripts': [
             'projnames = projnames:cmd',
