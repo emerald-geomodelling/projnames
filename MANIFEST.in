@@ -1,2 +1,2 @@
-include *.json
+include */*.json
 include *.LICENSE
