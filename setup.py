@@ -7,7 +7,7 @@ import os
 
 setuptools.setup(
     name='projnames',
-    version='0.0.2',
+    version='0.0.3',
     description='Projection name to/from epsg-code',
     long_description='Projection name to/from epsg-code using data from pyproj',
     long_description_content_type="text/markdown",
