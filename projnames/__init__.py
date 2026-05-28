@@ -1,4 +1,4 @@
-import pkg_resources
+from importlib.resources import files
 import json
 import sys
 import re
@@ -7,7 +7,8 @@ import re
 #
 # {pyproj.crs.CRS(code).name: code for code in pyproj.get_codes("epsg", "CRS")}
 
-projections = json.load(pkg_resources.resource_stream("projnames", "epsgnames.json"))
+with files("projnames").joinpath("epsgnames.json").open("rb") as _f:
+    projections = json.load(_f)
 by_epsg = {value: key for key, value in projections.items()}
 
 def search(name):
